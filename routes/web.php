@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProdutosControle;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::prefix('produtos')->group( function () {
+    Route::get('/', [ProdutosControle::class, 'index'])->name('produto.index');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
