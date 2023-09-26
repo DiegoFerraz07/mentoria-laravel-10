@@ -22,6 +22,6 @@ class ProdutosControle extends Controller
 
     public function delete(Request $request) 
     {
-        
+        return response()->json(['success' => true]);
     }
 }
